@@ -26,6 +26,7 @@ This repository is a collection of solutions to problems I solve on **LeetCode**
 
 - **Platforms:**
   - **LeetCode:** For solving the problems.
+  - **CodeForces:** For solving the problems.
   - **YouTube Tutorials:** For understanding problem-solving techniques and strategies.
   - **Blogs:** For gaining additional insights and learning about edge cases.
 
