@@ -1,4 +1,4 @@
-# LeetCode Daily
+# LeetCode && Codeforces
 
 Welcome to **LeetCode Daily**! 🌟  
 This repository is a collection of solutions to problems I solve on **LeetCode**, along with insights and techniques learned from **YouTube tutorials** and **blogs**. The goal is to document my journey, refine my skills, and grow as a developer.
