@@ -1,13 +1,13 @@
 # LeetCode && Codeforces
 
 Welcome to **LeetCode Daily**! 🌟  
-This repository is a collection of solutions to problems I solve on **LeetCode**, along with insights and techniques learned from **YouTube tutorials** and **blogs**. The goal is to document my journey, refine my skills, and grow as a developer.
+This repository is a collection of solutions to problems I solve on **LeetCode** and **Codeforces** along with insights and techniques learned from **YouTube tutorials** and **blogs**. The goal is to document my journey, refine my skills, and grow as a developer.
 
 ---
 
-## 📚 What is LeetCode?
+## 📚 What is LeetCode && Codeforces?
 
-**LeetCode** is a platform designed to help developers enhance their coding and problem-solving skills. It provides a vast collection of algorithmic challenges in categories like arrays, strings, trees, dynamic programming, and more. These challenges are widely used by developers to prepare for coding interviews and improve their skills.
+**LeetCode && Codeforces** is a platform designed to help developers enhance their coding and problem-solving skills. It provides a vast collection of algorithmic challenges in categories like arrays, strings, trees, dynamic programming, and more. These challenges are widely used by developers to prepare for coding interviews and improve their skills.
 
 ---
 
