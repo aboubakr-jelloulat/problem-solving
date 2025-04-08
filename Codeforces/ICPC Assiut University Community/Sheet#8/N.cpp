@@ -9,6 +9,7 @@ int  Cakeminator() // O(n^2)
 
     vector <int> ArrRow(row, 0);
     vector <int> ArrCol(col, 0);
+
     string Line;
 
     for (int i = 0; i < row; i++)
