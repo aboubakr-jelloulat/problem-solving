@@ -34,7 +34,6 @@ int  Cakeminator() // O(n^2)
                 sum ++;
         }
     }
-
     return sum;
 }
 
