@@ -1,29 +1,34 @@
 #include <iostream>
+#include <numeric>
+
 using namespace std;
-
-void	FastIO() {ios::sync_with_stdio(0); cin.tie(0);}
-
-typedef long long ll;
 
 const int N = 1e5 + 5;
 
-ll a[N];
-ll p[N];
+typedef long long ll;
 
-int32_t	main() 
+ll arr[N];
+ll prfx[N];
+
+
+int32_t	main(void)
 {
-	FastIO();
-    int n, q;	cin >> n >> q;
+	int n, q; cin>> n >> q;
 
-    for (int i = 1; i <= n; i++) cin >> a[i];
-    for (int i = 1; i <= n; i++) p[i] = a[i] + p[i - 1];
+	for(int i = 1; i <= n; i++)	cin >> arr[i];
 
-    while (q--) 
+	while (q--)
 	{
-        int l, r;
-        cin >> l >> r;
-        long long sum = p[r] - p[l - 1];
-        cout << sum << endl;
-    }
-}
+		int l , r, val; cin >> l >> r >> val;
+		prfx[l] += val;
+		prfx[r + 1] -= val;
+	}
 
+	partial_sum(prfx, prfx + n + 1, prfx);
+
+	for (int i = 1; i <= n; i++)	cout << prfx[i] + arr[i] << " ";
+
+	cout << endl;
+
+	return 0;
+}
