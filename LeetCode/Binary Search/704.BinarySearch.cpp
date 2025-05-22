@@ -1,11 +1,4 @@
-/**
- * CP-Templates - Comprehensive Competitive Programming Template
- * Author: [Aboubakr jelloulat]
- * GitHub: [aboubakr-jelloulat]
- * 
- * Usage: Include this file at the beginning of your solution
- * Platforms: LeetCode, Codeforces, and more ...
- */
+
 
 #include <algorithm>
 #include <cassert>
@@ -119,4 +112,4 @@ int32_t	main(void)
 
 	return 0;
 }
-// 
+
