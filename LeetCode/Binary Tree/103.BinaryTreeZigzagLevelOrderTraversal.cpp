@@ -6,14 +6,14 @@
 #include <algorithm>
 using namespace std;
 
-// struct TreeNode
-// {
-// 	int val { };
-// 	TreeNode *left { };
-// 	TreeNode *right { };
-// 	TreeNode(int val) :
-// 			val(val) {}
-// };
+struct TreeNode
+{
+	int val { };
+	TreeNode *left { };
+	TreeNode *right { };
+	TreeNode(int val) :
+			val(val) {}
+};
 
 class Solution
 {
