@@ -38,7 +38,7 @@ int main(void)
 
     vector <int> nums {1,2,3,1};
 
-    (answer.containsDuplicate(nums)) ? cout  << "Yes Found Duplicate" : cout << "No, No Duplicate";
+    (answer.hasDuplicate(nums)) ? cout  << "Yes Found Duplicate" : cout << "No, No Duplicate";
 
     cout << endl;
 
