@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+
 /*
 	Time & Space Complexity
 
@@ -13,25 +14,25 @@ using namespace std;
 class Solution 
 {
 public:
-    int removeElement(vector<int>& nums, int val) 
-    {
-		int k = 0;
+    int removeDuplicates(vector<int>& nums) 
+	{
+		int	l = 1;
 	
-		for (int i = 0; i < nums.size(); i++)
-			if (nums[i] != val)
-				nums[k++] = nums[i];
-			
-	   return k;
+		for (int i = 1; i < nums.size(); i++)
+			if (nums[i] != nums[i - 1])
+				nums[l++] = nums[i];
+		
+		return l;
     }
 };
 
 int main()
 {
-    Solution sol;
+	Solution sol;
 
-    vector<int> nums = {1, 2, 2, 3, 4};
+	vector<int> nums = {0,0,1,1,1,2,2,3,3,4};
 
-	int k = sol.removeElement(nums, 2);
+	int k = sol.removeDuplicates(nums);
    
    cout << "Lenght : " << k << endl;
 
@@ -43,5 +44,5 @@ int main()
 	
 	cout << endl;
 
-    return 0;
+	return 0;
 }
