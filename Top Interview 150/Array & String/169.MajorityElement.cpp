@@ -1,25 +1,25 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
 
 typedef vector<int> vi;
 
-class Solution {
+class Solution 
+{
 public:
-    void rotate(vector<int>& nums, int k) 
+    int majorityElement(vector<int>& nums) 
     {
-        int n = nums.size();
+        int count = 0, candidate  = 0;
 
-        k %= n;
-
-        reverse(nums.begin(), nums.end());
-
-        reverse(nums.begin(), nums.begin() + k);
-
-        reverse(nums.begin() + k, nums.end());
-
+        for (int num : nums) 
+        {
+            if (count == 0) 
+                candidate = num;
+            count += (num == candidate) ? 1 : -1;
+        }
+        
+        return candidate;
     }
 };
 
@@ -28,15 +28,9 @@ int main()
 {
     Solution sol;
 
-    vi nums {1,2,3,4,5,6,7};
+    vi nums {2,2,1,1,1,2,2};
 
-    sol.rotate(nums, 3);
-
-
-    for (int num : nums)
-        cout << num << (char)32;
-    
-    cout << endl;
+    cout << sol.majorityElement(nums) << endl;
 
 
     return 0;
