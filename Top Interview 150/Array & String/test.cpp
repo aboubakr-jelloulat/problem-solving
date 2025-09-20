@@ -1,46 +1,34 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-typedef vector<int> vi;
-
-class Solution 
+string findMajorityParty(vector<string>& votes) 
 {
-public:
-    int removeDuplicates(vector<int>& nums) 
-    {
-        int k = 0;
-
-        for (int i = 0; i < nums.size(); i++)
-        {
-            nums[k++] = nums[i];
-
-            if (i + 1 != nums.size() &&  nums[i] == nums[i + 1])
-                nums[k++] = nums[i++];
-                
-            while (i + 1 != nums.size() && nums[i] == nums[i + 1])
-                i++;
-
-        }
-        return k;
-    }
-};
-
-int main(void)
-{
-    Solution sol;
-
-    vi nums = {0,0,1,1,1,1,2,3,3};
-
-    int k = sol.removeDuplicates(nums);
-
-
-    for (int i = 0; i < k; i++)
-        cout << nums[i] << " ";
+    int count = 0;
+    string candidate = "";
     
-    cout << endl;
+    for (string vote : votes) 
+    {
+        if (count == 0) 
+            candidate = vote;
+        count += (vote == candidate) ? 1 : -1;
+    }
+    
+    count = 0;
+    for (string vote : votes)
+        if (vote == candidate)
+            count++;
+    
+    return (count > votes.size() / 2) ? candidate : "NO_MAJORITY";
+}
 
+int main() 
+{
+    vector<string> votes = {"Socialist", "Conservative", "Socialist", "Liberal", 
+                           "Socialist", "Socialist", "Conservative", "Socialist"};
+    
 
-    return 0 ;
+    cout << "Winner: " << findMajorityParty(votes) << endl;
+    
+    return 0;
 }
