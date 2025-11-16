@@ -1,29 +1,27 @@
-#include <bits/stdc++.h>
+#include  <bits/stdc++.h>
 using namespace std;
 
-int main() 
+void    foo(long long nb)
 {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
+    cout << nb << " ";
 
-    long long n; cin >> n;
+    if (nb == 1)
+        return ;
 
-    string output;
 
-    while (true) 
-    {
-        output += to_string(n) + " ";
+    if (nb % 2 == 0)
+        foo(nb / 2);
+    else
+        foo((nb * 3) + 1);
 
-        if (n == 1)
-            break;
+}
 
-        if (n % 2 == 0)
-            n /= 2;
-        else
-            n = 3*n + 1;
-    }
 
-    cout << output;
-    
+int main()
+{
+    long long nb;  cin >> nb;
+
+    foo(nb);
+
     return 0;
 }
