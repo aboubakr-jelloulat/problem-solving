@@ -9,9 +9,8 @@ public:
 		if (chars.size() == 1)
 			return 1;
 
-		char cur = chars[0];
 		vector<char> outs;
-		int count = 0;
+		int count = 1;
 
 		for (int i = 0; i < chars.size() - 1; i++)
 		{
@@ -48,6 +47,8 @@ int main(void)
 	vector<char> nums = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
 
 	std::cout << Solution::compress(nums) << std::endl;
+
+	for (auto &x : nums) std::cout << x << std::endl;
 	
 
 	return 0;
