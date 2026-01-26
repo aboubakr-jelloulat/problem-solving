@@ -1,55 +1,61 @@
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 
-class Solution {
+class Solution 
+{
 public:
+
     static int compress(vector<char>& chars) 
-	{
-		if (chars.size() == 1)
-			return 1;
+    {
+        if (chars.size() == 1)
+            return 1;
 
-		vector<char> outs;
-		int count = 1;
+        vector<char> res;
+        int count = 1;
 
-		for (int i = 0; i < chars.size() - 1; i++)
-		{
-			if (chars[i] != chars[i + 1])
-			{
-				outs.push_back(chars[i] + 48);
-				if (count > 10)
-				{
-					// fra9 dok nums like 12 => 1, 2
+        for (int i = 0; i < chars.size(); i++)
+        {
+            if (i == chars.size() - 1 || chars[i] != chars[i + 1])
+            {
+                res.push_back(chars[i]);
 
-					std::string nums = to_string(count);
-					outs.push_back(nums[0]);
-					outs.push_back(nums[1]); // maybe num is big like 222222
-				}
-				else if (count != 1)
-					outs.push_back(count);
-				
-				count = 0;
-			}
-			else
-			{
-				count ++;
-				
-			}
+                if (count > 1)
+                {
+                    string countStr = to_string(count);
+                    for (char c : countStr) 
+                    {
+                        res.push_back(c);
+                    }
+                }
 
-		}
+                count = 1; 
+            }
+            else
+            {
+                count++; 
+            }
+        }
 
-		return (outs.size());
+        
+        for (int i = 0; i < res.size(); i++) chars[i] = res[i];
+        
+
+        return res.size();
     }
 };
 
-int main(void)
+int main()
 {
-	vector<char> nums = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
+    vector<char> chars = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
+   
+    int newLength = Solution::Compress(chars);
+    cout << newLength << endl;
 
-	std::cout << Solution::compress(nums) << std::endl;
+    for (int i = 0; i < newLength; i++) 
+        cout << chars[i] << " ";
+    cout << endl;
 
-	for (auto &x : nums) std::cout << x << std::endl;
-	
-
-	return 0;
+    return 0;
 }
