@@ -50,7 +50,7 @@ int main()
 {
     vector<char> chars = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
    
-    int newLength = Solution::Compress(chars);
+    int newLength = Solution::compress(chars);
     cout << newLength << endl;
 
     for (int i = 0; i < newLength; i++) 
