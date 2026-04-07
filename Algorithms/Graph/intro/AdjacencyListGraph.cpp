@@ -104,8 +104,8 @@ int main()
     g.addEdge(3, 4);
 
     g.print();
-    g.BFS(0);
-    g.DFS(0); 
+    // g.BFS(0);
+    // g.DFS(0); 
 
     std::cout << "\nEdge (1,3) exists: " << (g.hasEdge(1, 3) ? "Yes" : "No") << "\n";
     g.removeEdge(1, 3);
