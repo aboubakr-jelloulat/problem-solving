@@ -11,7 +11,7 @@ class Solution
     int m, n;
     int ans = 0;
 
-public:
+public: // O(M∗N)
 
     bool IsValid(int x, int y, vector<vector<char>>& grid)
     {
@@ -20,15 +20,18 @@ public:
 
     void dfs(int x, int y, vector<vector<char>>& grid)
     {
+        if (!IsValid(x, y, grid))
+            return ;
+
         grid[x][y] = '0'; // mark visited
 
         for (int i = 0; i < 4; i++)
         {
+            
             int nx = x + dx[i];
             int ny = y + dy[i];
 
-            if (IsValid(nx, ny, grid))
-                dfs(nx, ny, grid);
+            dfs(nx, ny, grid);
         }
     }
 
