@@ -1,54 +1,35 @@
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" width="100"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://sta.codeforces.com/s/58270/images/codeforces-logo-with-telegram.png" alt="Codeforces" width="220"/>
+</p>
+
 # LeetCode && Codeforces
 
-Welcome to **LeetCode Daily**! 🌟  
-This repository is a collection of solutions to problems I solve on **LeetCode** and **Codeforces** along with insights and techniques learned from **YouTube tutorials** and **blogs**. The goal is to document my journey, refine my skills, and grow as a developer.
+A collection of my solutions to **LeetCode** and **Codeforces** problems, along with notes and techniques learned from tutorials and blogs. Documenting the journey, one problem at a time.
 
 ---
 
-## 📚 What is LeetCode && Codeforces?
+## Repository Structure
 
-**LeetCode && Codeforces** is a platform designed to help developers enhance their coding and problem-solving skills. It provides a vast collection of algorithmic challenges in categories like arrays, strings, trees, dynamic programming, and more. These challenges are widely used by developers to prepare for coding interviews and improve their skills.
-
----
-
-## 🚀 About This Repository
-
-- **What’s Inside:**  
-  A collection of problems organized by category and difficulty level, implemented in multiple programming languages.  
-- **Purpose:**  
-  To improve my understanding of algorithms and data structures by solving problems and learning from online resources.  
-- **Learning Resources:**  
-  Many solutions are inspired by YouTube tutorials and blogs that provide clear explanations and alternative approaches.
-
----
-
-## 🛠️ Tools and Platforms
-
-- **Platforms:**
-  - **LeetCode:** For solving the problems.
-  - **CodeForces:** For solving the problems.
-  - **YouTube Tutorials:** For understanding problem-solving techniques and strategies.
-  - **Blogs:** For gaining additional insights and learning about edge cases.
-
-## 🌟 Why This Repository?
-
-1. To track my daily problem-solving journey on LeetCode.
-2. To document approaches and techniques for better understanding.
-3. To explore and compare solutions in different programming languages.
-4. Prepare for Interviews: To solve problems commonly encountered in technical interviews, refining my ability to solve them efficiently and confidently under time constraints.
-5. Competitive Programming: To practice challenging problems and build the skills required for competitive programming contests.
-
+| Folder | Description |
+|---|---|
+| `LeetCode/` | LeetCode problem solutions by category |
+| `Codeforces/` | Codeforces contest and practice solutions |
+| `NeetCode 150/` | Solutions to the NeetCode 150 roadmap |
+| `Top Interview 150/` | LeetCode Top Interview 150 study plan |
+| `sql-50-study-plan/` | LeetCode SQL 50 study plan |
+| `CSES/Graph` | CSES problem set graph algorithms |
+| `Algorithms/Graph` | General graph algorithm practice |
+| `Grokking/` | Grokking the Coding Interview patterns |
+| `CP 1337 BOOTCAMP/` | 1337 coding bootcamp exercises |
+| `Training/Level 1/` | Level 1 training problems |
 
 ---
 
-- **Languages Used:**
-  - C
-  - C++
-  - C#
-  - JavaScript
-  - Python
-  - Node.js
+## 🛠️ Languages
+
+· C++ · Python · SQL
 
 ---
-
 
